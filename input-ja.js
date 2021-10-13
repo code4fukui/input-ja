@@ -8,3 +8,6 @@ class InputJa extends InputWithValidator {
 }
 
 customElements.define("input-ja", InputJa);
+
+export { InputJa };
+
