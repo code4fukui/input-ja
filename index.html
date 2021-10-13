@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>input-ja tag demo</title>
+</head><body>
+
+<script type="module" src="./input-ja.js"></script>
+
+<h1>input-ja tag demo</h1>
+
+<div style="display: inline-grid; grid-template-columns: 1fr 1fr 1fr;grid-gap: .5em">
+  <div>input-ja</div><input-ja id=inp1></input-ja><div>input-ja 0-9 / A-Z / a-z / . / _ / -</div>
+  <div>input-ja maxlength=8</div><input-ja id=inp2 maxlength=8></input-ja><div>and limit 8 characters</div>
+</div>
+
+<br>
+<br>
+<input id=res placeholder="result">
+
+<script type="module">
+onload = () => {
+  inp1.onchange = () => {
+    res.value = inp1.value;
+  };
+  inp2.onchange = () => {
+    res.value = inp2.value;
+  };
+};
+</script>
+
+<hr>
+<a href=https://fukuno.jig.jp/3367>by @taisukef</a>, <a href=https://github.com/code4fukui/input-ja/>src on GitHub</a>
+
+<style>
+body {
+  margin: 3em;
+}
+input {
+  font-size: 16px;
+}
+annotate-element {
+  background-color: #fdd;
+  padding: .1em .8em;
+  font-size: 80%;
+}
+</style>
+
+</body></html>
