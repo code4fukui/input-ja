@@ -2,12 +2,6 @@ import { JISX0213 } from "https://code4fukui.github.io/mojikiban/JISX0213.js";
 //import { Validator } from "../input-number/Validator.js";
 import { Validator } from "https://code4fukui.github.io/input-number/Validator.js";
 
-/*
-const han = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_.";
-const zen = "０１２３４５６７８９ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ－＿．";
-const hanzen = han + zen;
-*/
-
 class JapaneseValidator extends Validator {
   isValid(c) {
     if (c == "") {
