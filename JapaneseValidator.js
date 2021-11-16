@@ -8,8 +8,13 @@ class JapaneseValidator extends Validator {
       return false;
     }
     const r = JISX0213.shrink(c);
-    //console.log(c, r);
-    return r != null && r.length > 0;
+    if (r == null && r.length == 0) {
+      return false;
+    }
+    if (!JISX0213.isValid(r)) {
+      return false;
+    }
+    return true;
   }
   normalize(c) {
     const errs = JISX0213.validate(c);
@@ -17,6 +22,12 @@ class JapaneseValidator extends Validator {
       return c;
     }
     const c2 = JISX0213.shrink(c);
+    if (!c2) {
+      return null;
+    }
+    if (!JISX0213.isValid(c2)) {
+      return null;
+    }
     return c2;
   }
 }
