@@ -1,5 +1,7 @@
 # input-ja
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 An input box that only accepts input of JISX0213 characters.
 
 ## Demo
