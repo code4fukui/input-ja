@@ -1,18 +1,15 @@
 # input-ja
 
-An input box that only accepts input of JISX0213 characters.
+JIS X 0213の文字のみ入力可能な入力ボックスコンポーネントです。
 
-## Demo
+## デモ
 https://code4fukui.github.io/input-ja/
 
-## Features
-- Accepts only JISX0213 characters
-- Provides normalization of input
+## 機能
+- JIS X 0213の文字のみ入力可能
+- 入力内容の正規化
 
-## Requirements
-None
-
-## Usage
+## 使い方
 ```html
 <script type="module" src="https://code4fukui.github.io/input-ja/input-ja.js"></script>
 <input-ja id=inp maxlength=10></input-ja>
@@ -26,5 +23,5 @@ onload = () => {
 </script>
 ```
 
-## License
+## ライセンス
 MIT License
