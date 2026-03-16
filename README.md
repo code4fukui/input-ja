@@ -2,7 +2,7 @@
 
 > 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-An input box that only accepts input of JISX0213 characters.
+An input box component that only accepts input of JISX0213 characters.
 
 ## Demo
 https://code4fukui.github.io/input-ja/
@@ -29,4 +29,4 @@ onload = () => {
 ```
 
 ## License
-MIT License
+MIT License — see [LICENSE](LICENSE).
